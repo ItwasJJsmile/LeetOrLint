@@ -20,9 +20,16 @@ public class ClimbStairsSolution {
         return dp[n];
     }
 
+    static int indexFor(int h, int length) {
+                 return h & (length-1);
+    }
+
+
     @Test
     public void test(){
-        assertEquals(8,climbStairs(5));
+       int a = indexFor(7647864,5);
+       System.out.println(a);
+        //assertEquals(8,climbStairs(5));
     }
 }
 
